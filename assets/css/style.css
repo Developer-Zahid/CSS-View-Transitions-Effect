@@ -1,3 +1,7 @@
+@view-transition {
+  navigation: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ body {
     font-family: sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    background-color: var(--_bg-color);
 }
 
 img {
@@ -19,7 +24,7 @@ img {
     position: relative;
     display: grid;
     place-items: center;
-    min-height: calc(100svh - 2rem);
+    min-height: 100svh;
     padding: 1rem;
 
     .back {
@@ -57,8 +62,4 @@ img {
     .card__image {
         max-height: 200px;
     }
-}
-
-@view-transition {
-  navigation: auto;
 }
